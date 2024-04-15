@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Крестики-Нолики</title>
+	</head>
+	<body>
+		<main class="main">
+			<h1 class="title">Игра "Крестики - Нолики"</h1>
+			<section class="players">
+				<div class="player">
+					<p>Игрок 1</p>
+					<p>Счёт: <span>0</span></p>
+				</div>
+				<div class="player">
+					<p>Игрок 2</p>
+					<p>Счёт: <span>0</span></p>
+				</div>
+			</section>
+			<section class="settings">
+				<fieldset>
+					<legend>Выберите размер игрового поля:</legend>
+					<div>
+						<input class="field-input" type="radio" id="small" name="field" value="small" checked>
+						<label for="small">3х3</label>
+					</div>
+					<div>
+						<input class="field-input" type="radio" id="middle" name="field" value="middle">
+						<label for="middle">4х4</label>
+					</div>
+					<div>
+						<input class="field-input" type="radio" id="big" name="field" value="big">
+						<label for="big">5х5</label>
+					</div>
+					<div>
+						<input class="field-input" type="radio" id="huge" name="field" value="huge">
+						<label for="huge">6х6</label>
+					</div>
+				</fieldset>
+			</section>
+			<section class="status">
+				<div class="status-message"></div>
+			</section>
+			<section class="field"></section>
+			<button class="button">Очистить</button>
+			<template id="field-template">
+				<div class="cell"></div>
+			</template>
+		</main>
+		<script src="js/main.js" type="module"></script>
+	</body>
+</html>
